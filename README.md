@@ -17,13 +17,13 @@ A custom Airbyte source connector for the Cat Fact API (catfact.ninja) that prov
 
 ```bash
 # Pull the image
-docker pull ghcr.io/your-username/airbyte-source-catfact:latest
+docker pull ghcr.io/hennywell/airbyte-source-catfact:latest
 
 # Test connection
-echo '{}' | docker run --rm -i ghcr.io/your-username/airbyte-source-catfact:latest check --config /dev/stdin
+echo '{}' | docker run --rm -i ghcr.io/hennywell/airbyte-source-catfact:latest check --config /dev/stdin
 
 # Discover available streams
-echo '{}' | docker run --rm -i ghcr.io/your-username/airbyte-source-catfact:latest discover --config /dev/stdin
+echo '{}' | docker run --rm -i ghcr.io/hennywell/airbyte-source-catfact:latest discover --config /dev/stdin
 ```
 
 ### Using in Airbyte
@@ -32,9 +32,9 @@ echo '{}' | docker run --rm -i ghcr.io/your-username/airbyte-source-catfact:late
 2. Select **Custom Connector** → **Add a new Docker connector**
 3. Fill in the details:
    - **Connector display name**: Cat Fact
-   - **Docker repository name**: `ghcr.io/your-username/airbyte-source-catfact`
+   - **Docker repository name**: `ghcr.io/hennywell/airbyte-source-catfact`
    - **Docker image tag**: `latest`
-   - **Connector documentation URL**: `https://github.com/your-username/airbyte-source-catfact`
+   - **Connector documentation URL**: `https://github.com/hennywell/airbyte-source-catfact`
 
 ## Configuration
 
@@ -79,7 +79,7 @@ This connector requires no configuration as the Cat Fact API is free and public.
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/airbyte-source-catfact.git
+git clone https://github.com/hennywell/airbyte-source-catfact.git
 cd airbyte-source-catfact
 
 # Install dependencies
@@ -132,6 +132,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Support
 
-- **Issues**: [GitHub Issues](https://github.com/your-username/airbyte-source-catfact/issues)
+- **Issues**: [GitHub Issues](https://github.com/hennywell/airbyte-source-catfact/issues)
 - **Cat Fact API**: [catfact.ninja](https://catfact.ninja/)
 - **Airbyte Documentation**: [docs.airbyte.com](https://docs.airbyte.com/)# airbyte-source-catfact
