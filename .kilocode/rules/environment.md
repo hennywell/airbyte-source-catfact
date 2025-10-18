@@ -15,5 +15,3 @@ airbyte web ui
 - http://127.0.0.1:8080/
 - http://192.168.179.229:8080/
 
-minikube dashboard:
-- http://192.168.179.229:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/#/workloads?namespace=airbyte-v2
