@@ -1,0 +1,22 @@
+documentationUrl: https://docs.airbyte.com/integrations/sources/catfact
+connectionSpecification:
+  $schema: http://json-schema.org/draft-07/schema#
+  title: Cat Fact Spec
+  type: object
+  required: []
+  additionalProperties: true
+  properties:
+    max_length:
+      type: integer
+      title: Maximum Fact Length
+      description: Maximum length of cat facts to retrieve (optional)
+      minimum: 1
+      maximum: 1000
+      default: 500
+    limit:
+      type: integer
+      title: Limit
+      description: Maximum number of records to retrieve per request (optional)
+      minimum: 1
+      maximum: 100
+      default: 25
